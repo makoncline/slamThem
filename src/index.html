@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Drum Machine</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h1>Slam Them Soundboard</h1>
+  <div class='container'>
+    <div class='key' data-key="65" onclick="handleClick(this)">
+      <p><strong>Slam</strong> - (A)</p>
+    </div>
+    <div class='key' data-key="83" onclick="handleClick(this)">
+      <p><strong>Them</strong> - (S)</p>
+    </div>
+    <div class='key' data-key="68" onclick="handleClick(this)">
+      <p><strong>Slam them.</strong> - (D)</p>
+    </div>
+    <div class='key' data-key="70" onclick="handleClick(this)">
+      <p><strong>Slam them?</strong> - (F)</p>
+    </div>
+    <div class='key' data-key="71" onclick="handleClick(this)">
+      <p><strong>SLAM THEM!</strong> - (G)</p>
+    </div>
+  </div>
+
+  <audio src="./audio/slam.mp3" data-key="65"></audio>
+  <audio src="./audio/them.mp3" data-key="83"></audio>
+  <audio src="./audio/period.mp3" data-key="68"></audio>
+  <audio src="./audio/question.mp3" data-key="70"></audio>
+  <audio src="./audio/exclamation.mp3" data-key="71"></audio>
+
+  <script src='./index.js'></script>
+</body>
+
+</html>
